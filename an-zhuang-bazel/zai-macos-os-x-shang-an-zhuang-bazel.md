@@ -77,5 +77,5 @@ chmod +x bazel-0.5.2-installer-darwin-x86_64.sh
 export PATH="$PATH:$HOME/bin"
 ```
 
-
+你也可以把这个命令添加到你的 ~/.bashrc 文件中
 
