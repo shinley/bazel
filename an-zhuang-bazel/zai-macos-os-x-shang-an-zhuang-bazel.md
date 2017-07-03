@@ -52,5 +52,23 @@ sudo gcc --version
 
 2.下载Bazel安装包
 
+到Bazel的发布页下载:[GitHub releases page](https://github.com/bazelbuild/bazel/releases)
+
+下载二进制的安装包 **bazel-0.5.2-installer-darwin-x86\_64.sh.** 这个安装包包含了二进制的bazel和需要的JDK. 不管你的系统上是否装有JDK ,都 会使用这个内嵌的JDK.
+
+**注意 **bazel-0.5.2-without-jdk-installer-darwin-x86\_64.sh 是一个没有内嵌JDK8的版本. 只会使用你系统上已经安装的JDK8.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
