@@ -14,7 +14,7 @@
 
 Bazel自带了两个自动命令补全的脚本, 安装Bazel之后,你可以:
 
-* 获取 [bash 自动补全脚本](/bash-completion)
+* 获取 bash 自动补全脚本
 * 安装 zsh 自动补全脚本123
 
 
