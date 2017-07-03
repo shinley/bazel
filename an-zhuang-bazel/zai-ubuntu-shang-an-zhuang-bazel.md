@@ -28,7 +28,7 @@ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 
 如果你想安装测试版的Bazel , 把上面命令中的 stable替换成 testing
 
-1. 安装和升级Bazel
+2.安装和升级Bazel
 
 ```
 sudo apt-get update && sudo apt-get install bazel
@@ -52,7 +52,7 @@ Bazel的二进制安装包可以在Bazel的[ GitHub发面页](https://github.com
 sudo apt-get install pkg-config zip g++ zlib1g-dev unzip
 ```
 
-1. 下载Bazel
+2.下载Bazel
 
 到Bazel的发布页[GitHub releases page](https://github.com/bazelbuild/bazel/releases)
 
@@ -60,7 +60,7 @@ sudo apt-get install pkg-config zip g++ zlib1g-dev unzip
 
 注意: **bazel-0.5.2-without-jdk-installer-linux-x86\_64.sh.** 它是一个没有内嵌JDK的版本, 只会使用你自已安装的JDK8.
 
-1. 运行安装包
+3.运行安装包
 
 ```
 chmod +x bazel-0.5.2-installer-linux-x86_64.sh
@@ -71,7 +71,7 @@ chmod +x bazel-0.5.2-installer-linux-x86_64.sh
 
 --help 命令可以查看其它的安装选项.
 
-1. 设置环境变量
+4.设置环境变量
 
 如果你用--user安装Bazel,  Bazel的可执行文件被安装到 $HOME/bin 目录下,  你可以根据下面的命令把这个目录添加到PATH环境变量中
 
