@@ -69,7 +69,7 @@ chmod +x bazel-0.5.2-installer-linux-x86_64.sh
 
 --user 标志将Bazel安装到系统上的$ HOME / bin目录，并将.bazelrc路径设置为$ HOME / .bazelrc。
 
---help 查看其他安装选项。
+--help 命令可以查看其它的安装选项.
 
 4.设置环境变量
 
