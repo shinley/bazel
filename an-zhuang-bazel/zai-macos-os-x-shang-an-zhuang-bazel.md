@@ -38,7 +38,7 @@ brew install bazel
 
 安装包包含了二进制的Bazel和需要的JDK. 一些其它Bazel运行需要的包也必须安装.
 
-1. 安装XCode 命令行工具
+1.安装XCode 命令行工具
 
 Xcode的下载地址: [Apple Developer Site](https://developer.apple.com/xcode/downloads/) \(这个链接跳转到App Store\).
 
@@ -49,6 +49,8 @@ Xcode的下载地址: [Apple Developer Site](https://developer.apple.com/xcode/d
 ```
 sudo gcc --version
 ```
+
+2. 下载Bazel安装包
 
 
 
