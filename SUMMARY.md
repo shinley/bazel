@@ -5,4 +5,5 @@
 * [Bazel概览](bazelgai-lan.md)
 * [安装Bazel](an-zhuang-bazel.md)
   * [在Ubuntu上安装Bazel](an-zhuang-bazel/zai-ubuntu-shang-an-zhuang-bazel.md)
+    * [测试](test.md)
 
