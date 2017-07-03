@@ -69,5 +69,7 @@ chmod +x bazel-0.5.2-installer-darwin-x86_64.sh
 
 --help 命令可以查看其它的安装选项.
 
-4. 设置环境变量
+4.设置环境变量
+
+
 
