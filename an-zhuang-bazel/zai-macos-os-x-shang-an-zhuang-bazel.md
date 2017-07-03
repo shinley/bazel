@@ -71,5 +71,11 @@ chmod +x bazel-0.5.2-installer-darwin-x86_64.sh
 
 4.设置环境变量
 
+如果你用--user安装的Bazel,  Bazel的可执行文件被安装到 $HOME/bin 目录下,  你可以根据下面的命令把这个目录添加到PATH环境变量中
+
+```
+export PATH="$PATH:$HOME/bin"
+```
+
 
 
