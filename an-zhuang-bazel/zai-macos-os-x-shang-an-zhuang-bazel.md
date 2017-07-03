@@ -65,5 +65,7 @@ chmod +x bazel-0.5.2-installer-darwin-x86_64.sh
 ./bazel-0.5.2-installer-darwin-x86_64.sh --user
 ```
 
+--user 表示 安装bazel到 你系统的 $HOME/bin 目录 , 并且会在$HOME/.bazelrc中设置PATH环境变量.
 
+--help 命令可以查看其它的安装选项.
 
