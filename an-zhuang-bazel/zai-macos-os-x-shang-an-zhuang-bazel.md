@@ -50,7 +50,7 @@ Xcode的下载地址: [Apple Developer Site](https://developer.apple.com/xcode/d
 sudo gcc --version
 ```
 
-2. 下载Bazel安装包
+2.下载Bazel安装包
 
 
 
