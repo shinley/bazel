@@ -77,5 +77,15 @@ chmod +x bazel-0.5.2-installer-darwin-x86_64.sh
 export PATH="$PATH:$HOME/bin"
 ```
 
-你也可以把这个命令添加到你的 ~/.bashrc 文件中
+你也可以把这个命令添加到你的 ~/.bashrc 文件中.
+
+一切就绪之后,你可以确认Bazel是否安装成功. 通过命令: bash bazel version
+
+安装成功之后,你可以升级你的Bazel, 通过以下命令:
+
+```
+sudo apt-get upgrade bazel
+```
+
+
 
