@@ -14,5 +14,7 @@ touch WORKSPACE
 
 ### 创建BUILD文件
 
+Bazel通过检查BUILD文件知道你要构建工程中的哪一个目录. BUILD文件的
+
 
 
