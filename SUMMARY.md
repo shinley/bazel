@@ -9,5 +9,5 @@
   * [源码编译安装Bazel](an-zhuang-bazel/yuan-ma-bian-yi-an-zhuang-bazel.md)
 * [开始使用](kai-shi-shi-yong.md)
 * [使用Bazel](shi-yong-bazel.md)
-  * 概念和术语
+  * [概念和术语](shi-yong-bazel/gai-nian-he-zhu-yu.md)
 
