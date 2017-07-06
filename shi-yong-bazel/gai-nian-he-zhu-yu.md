@@ -37,3 +37,17 @@ Bazel从一个叫做工作区的目录中的源码构建软件, 工作区中的�
 
 在工作区中,最主要的代码组织单元就是包.  包就是一组相关的文件和它们之间依赖关系的一种规范.
 
+包被定义为一个包含了名叫BUILD文件的目录. 它在工作区目录之下. 包中包含 其目录中的所有文件,以及它下面的所有子目录, 但是其中也包含了BUILD文件的文件夹除外.
+
+例如, 在下面的目录树中, 有两个包: my/app 和子包 my/app/tests. 注意: my/app/data不是一个包, 它是属于包my/app的一个目录
+
+```
+src/my/app/BUILD
+src/my/app/app.cc
+src/my/app/data/input.txt
+src/my/app/tests/BUILD
+src/my/app/tests/test.cc
+```
+
+
+
