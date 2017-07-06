@@ -49,5 +49,11 @@ src/my/app/tests/BUILD
 src/my/app/tests/test.cc
 ```
 
+## 目标
+
+包是一个容器, 组成包的元素叫做目标\(targets\).  大多数 目标\(targets\) 属于 文件和规则 ,.此外,还有另外一种目标: 包组\(package groups\), 这种目标非常少.
+
+目标层次
+
 
 
