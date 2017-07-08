@@ -90,7 +90,7 @@ src/my/app/tests/test.cc
 //my/app:app
 //my/app
 :app
-app 
+app
 ```
 
 
