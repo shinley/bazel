@@ -93,5 +93,56 @@ src/my/app/tests/test.cc
 app
 ```
 
+\(It is a matter of convention that the colon is omitted for files, but retained for rules, but it is not otherwise significant.\)
+
+类似地，在BUILD文件中，属于该包的文件可能被相对于包目录的未修饰的名称引用:
+
+```
+generate.cc
+testdata/input.txt
+```
+
+对于其它包或者命令行来说, 这些文件目标必须通过完整的标签名引用, 例如:
+
+```
+//my/app:generate.cc
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
