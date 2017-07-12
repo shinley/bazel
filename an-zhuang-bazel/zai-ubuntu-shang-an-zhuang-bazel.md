@@ -87,5 +87,5 @@ export PATH="$PATH:$HOME/bin"
 sudo apt-get upgrade bazel
 ```
 
-测试 
+
 
