@@ -161,5 +161,5 @@ testdata/testdepot.zip  # Wrong: testdata is a different package.
 
 ## BUILD文件
 
-
+前面的部分描述了包，目标和标签以及构建依赖关系图。 在本节中，我们将介绍用于定义包的具体语法。
 
