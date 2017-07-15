@@ -175,3 +175,5 @@ BUILD文件的具体语法是Python的一个子集。 最初的语法是Python�
 
 Lexemes：核心语言的词法语法是Python 2.6的严格子集，我们建议读者参考Python规范以了解详细信息。 不支持的Python的词法功能包括：字符串文字中的浮点文字，十六进制和Unicode转义。
 
+BUILD文件应仅使用ASCII字符，尽管技术上它们使用Latin-1字符集进行解释。 使用`coding：`声明编码是禁止的。
+
