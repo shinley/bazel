@@ -67,7 +67,7 @@ src/my/app/tests/test.cc
 
 包组 是用来限制某些规则的访问权限的一组包, 包组使用`package_group`函数定义.它有两个属性:包的列表及其名称.  引用它们的唯一方法是通过规则的`visibility`属性, 或者 package函数的 `defalut_visibility` 属性. 它们不生成或者使用文件, 更多信息,请参考构建百科章节.
 
-# 标签
+## 标签
 
 所有的目标都属于一个包, 包的名称叫做标签. 一个经典的标签的规范形式如下所示:
 
@@ -108,5 +108,70 @@ testdata/input.txt
 //my/app:generate.cc
 ```
 
-相对标签不能用于指向其它包中的目标; 在这种情况下必须要指定完整的包名. 例如:
+相对标签不能用于指向其它包中的目标; 在这种情况下必须要指定完整的包名. 例如: 有两个包`my/app`和包`my/app/testdata`\(每个包都有它自已的BUILD文件\), 第二个包中有一个名叫`testdepot.zip`的文件. 这里`//my/app:BUILD`有两种方式引用这个文件\(一个对的,一个错的\):
+
+```
+testdata/testdepot.zip  # Wrong: testdata is a different package.
+//my/app/testdata:testdepot.zip   # Right.
+```
+
+如果错误的使用标签引用`testdepot.zip`文件, 比如 //my/app:testdata/testdept.zip或者//my:app/testdata/testdepot.zip, 构建工具会报"crosses a package boundary"的错误. 因此您应该通过将冒号放在包含最内层的BUILD文件的目录之后来更正标签, 比如: `//my/app/testdata:testdepot.zip`.
+
+## 标签规范
+
+标签的语法是有意的严格的，以便禁止对shell有特殊意义的元字符。 这有助于避免无意的引用问题，并且可以更容易地构建操纵标签的工具和脚本，例如Bazel查询语言。 标签中禁止以下所有内容：任何类型的空白，大括号，括号或括号; 通配符，如 \*;  shell元字符，如＆，\|; 这个列表不全面; 具体细节如下。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
