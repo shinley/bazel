@@ -163,3 +163,5 @@ testdata/testdepot.zip  # Wrong: testdata is a different package.
 
 前面的部分描述了包，目标和标签以及构建依赖关系图。 在本节中，我们将介绍用于定义包的具体语法。
 
+根据定义，每个包都包含一个BUILD文件，这是一个用构建语言编写的简短程序。 大多数BUILD文件似乎只是一系列构建规则的声明; 确实，在编写BUILD文件时，强烈地鼓励声明方式。
+
