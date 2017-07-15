@@ -177,3 +177,47 @@ Lexemes：核心语言的词法语法是Python 2.6的严格子集，我们建议
 
 BUILD文件应仅使用ASCII字符，尽管技术上它们使用Latin-1字符集进行解释。 使用`coding：`声明编码是禁止的。
 
+语法：核心语言的语法如下所示，使用EBNF符号。 使用Python定义的优先级解决歧义。
+
+```
+file_input ::= (simple_stmt? '\n')*
+
+simple_stmt ::= small_stmt (';' small_stmt)* ';'?
+
+small_stmt ::= expr
+             | assign_stmt
+
+assign_stmt ::= IDENTIFIER '=' expr
+
+expr ::= INTEGER
+       | STRING+
+       | IDENTIFIER
+       | IDENTIFIER '(' arg_list? ')'
+       | expr '.' IDENTIFIER
+       | expr '.' IDENTIFIER '(' arg_list? ')'
+       | '[' expr_list? ']'
+       | '[' expr ('for' IDENTIFIER 'in' expr)+ ']'
+       | '(' expr_list? ')'
+       | '{' dict_entry_list? '}'
+       | '{' dict_entry ('for' IDENTIFIER 'in' expr)+ '}'
+       | expr '+' expr
+       | expr '-' expr
+       | expr '%' expr
+       | '-' expr
+       | expr '[' expr? ':' expr? ']'
+       | expr '[' expr ']'
+
+expr_list ::= (expr ',')* expr ','?
+
+dict_entry_list ::= (dict_entry ',')* dict_entry ','?
+
+dict_entry ::= expr ':' expr
+
+arg_list ::= (arg ',')* arg ','?
+
+arg ::= IDENTIFIER '=' expr
+      | expr
+```
+
+
+
