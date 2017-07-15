@@ -167,3 +167,5 @@ testdata/testdepot.zip  # Wrong: testdata is a different package.
 
 然而，构建语言实际上是一种命令式语言，而BUILD文件被解释为一个连续的语句列表。 构建规则函数（如cc\_library）是其作用在构建工具中创建抽象构建规则的过程。
 
+BUILD文件的具体语法是Python的一个子集。 最初的语法是Python的，但经验表明，用户很少使用Python的功能，而且当它们这样做时，往往会导致复杂而脆弱的BUILD文件。 在许多情况下，使用这些特征是不必要的，并且可以通过使用外部程序来实现相同的结果，例如， 通过genrule构建规则。
+
