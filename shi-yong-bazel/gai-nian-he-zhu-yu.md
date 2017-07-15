@@ -169,3 +169,5 @@ testdata/testdepot.zip  # Wrong: testdata is a different package.
 
 BUILD文件的具体语法是Python的一个子集。 最初的语法是Python的，但经验表明，用户很少使用Python的功能，而且当它们这样做时，往往会导致复杂而脆弱的BUILD文件。 在许多情况下，使用这些特征是不必要的，并且可以通过使用外部程序来实现相同的结果，例如， 通过genrule构建规则。
 
+至关重要的是，构建语言中的程序无法执行任意I / O（尽管很多用户尝试！）。 这种不变量使得BUILD文件的解释成为封闭的，即仅依赖于一组已知的输入，这对于确保构建是可重现的必需的。
+
