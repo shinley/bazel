@@ -165,3 +165,5 @@ testdata/testdepot.zip  # Wrong: testdata is a different package.
 
 根据定义，每个包都包含一个BUILD文件，这是一个用构建语言编写的简短程序。 大多数BUILD文件似乎只是一系列构建规则的声明; 确实，在编写BUILD文件时，强烈地鼓励声明方式。
 
+然而，构建语言实际上是一种命令式语言，而BUILD文件被解释为一个连续的语句列表。 构建规则函数（如cc\_library）是其作用在构建工具中创建抽象构建规则的过程。
+
