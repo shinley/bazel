@@ -10,3 +10,13 @@
 
 由于水平有限, 对Bazel的翻译,首先优先翻译使用频率比较高的内容, 工作中很少使用的内容优先级就降低了, 有时间的话也会补全.   其中有可能会有错误或词不达意的地方, 也欢迎大家指正.
 
+
+
+
+
+bazel官方文档地址: [https://bazel.build/](https://bazel.build/)
+
+中文文档github地址: [https://github.com/shinley/bazel](https://github.com/shinley/bazel)
+
+
+
