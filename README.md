@@ -12,5 +12,3 @@ bazel官方文档地址: [https://bazel.build/](https://bazel.build/)
 
 中文文档github地址: [https://github.com/shinley/bazel](https://github.com/shinley/bazel)
 
-[^1]: Enter footnote here.
-
